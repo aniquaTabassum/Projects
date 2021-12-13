@@ -1,0 +1,22 @@
+# Equipments used:
+-> Arduino Uno
+-> Ultrasonic sensor (HC-SR04)
+-> Male to male wires
+
+# Objective:
+To measure distance of an object in centimeters using the ultrasonic sensor and displaying it console using python
+
+# Code notes:
+    * Arduino
+	Each of the const global variables represents the ultrasonic sensor pin having same name. <pore aro likhbo>
+
+    * Python:
+	Import 'pyserial' -> for receiving data from arduino
+	Import 'time' -> to use the sleep() function
+	serial.Serial('COMxx', n) where xx is the com port number and n is <something related to signal.. can't remember it right now>
+	It creates a serial object that receives serialized input from the arduino
+	incoming.decode() -> for decoding the stream.
+	decodedData.rstrip() -> for eliminating \r, \f at the end of the string.
+	
+	And finally, we pridecodent the string. That string is the final output.
+	
